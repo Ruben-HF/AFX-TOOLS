@@ -237,7 +237,40 @@ notesList.addEventListener('click', function(event) {
 // Render the notes list for the first time
 renderNotesList();
 
-
+// Descargar las notas en formato JSON
+function downloadNotes() {
+    const data = JSON.stringify(notes, null, 2);
+    const blob = new Blob([data], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'notes.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+  
+  // Cargar notas desde un archivo JSON
+  function loadNotesFromFile(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const content = e.target.result;
+      const newNotes = JSON.parse(content);
+      notes.splice(0, notes.length, ...newNotes);
+      renderNotesList();
+      saveNotes();
+    };
+    reader.readAsText(file);
+  }
+  
+  // Asociar las funciones a los botones
+  const downloadBtn = document.querySelector('#download-btn');
+  const loadJsonBtn = document.querySelector('#load-json-btn');
+  downloadBtn.addEventListener('click', downloadNotes);
+  loadJsonBtn.addEventListener('change', loadNotesFromFile);
+  
 
 
 

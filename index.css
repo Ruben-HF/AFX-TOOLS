@@ -374,18 +374,17 @@ tr[draggable="true"] {
 }
 
 .Data{
-    background-color: whitesmoke;
     margin-top: 6%;
-    min-height: 30px;
     display: flex;
-    justify-content: space-around;
+    margin: 12px;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .rhfbtn{
-    padding: 15px;
+    padding: 6px;
     border-radius: 9px;
-    font-size: x-large;
 }
 
 nav1{
