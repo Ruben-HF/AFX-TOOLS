@@ -1,0 +1,394 @@
+html,body{
+    height:100%;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#AppsC5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 6%;
+}
+
+#ToDo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.ToDo{
+    width: 80%;
+    box-shadow: 0 0 10px #ccc;   
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titlePending{
+    width: 100% !important; 
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+#toDoView{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-bottom: 3%;
+}
+
+#listaPendientes{
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.contentPending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#botonesToDo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    align-items: flex-end;
+    width: 290px;
+}
+
+.editPending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 6%;
+}
+
+.Registro{
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 6%;
+}
+
+.formu{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textarea{
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+
+
+
+#notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+#notes-app {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-content: space-evenly;
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+}
+  
+#notes-list {
+    flex: 1;
+    overflow-y: scroll;
+}
+  
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-content: space-around;
+}
+  
+.note-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.note-actions {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 3%;
+}
+  
+#note-inputs {
+    padding: 10px;
+}
+  
+#note-title-input,
+#note-text-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+  
+#note-text-input {
+    height: 200px;
+    resize: none;
+}
+  
+#save-btn {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+    
+
+    #AppsC5{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    #ToDo{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    
+    #notes{
+        width: 80%;
+        height: auto;
+    }
+    
+    #notes-app {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: space-evenly;
+        min-height: 635px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        padding: 20px;
+    }
+
+    #contador{
+        width: 80% !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;  
+        border-radius: 10px;
+        margin-top: 3%;
+    }
+
+    #calculadora{
+        width: 80% !important;
+        height: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;  
+        border-radius: 10px;
+        margin-top: 3%;
+    }
+
+    .calcutable {
+        border-collapse: collapse;
+        font-size: 20px;
+        width: 80%;
+        max-width: 360px;
+        min-width: 180px;
+        border-radius: 10px;
+        margin: 10%;
+    }
+
+
+    #reset {
+        font-size: 18px !important;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 45%;
+        border-radius: 10px !important;
+        margin-bottom: 3% !important;
+    }
+}
+
+#contador{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;  
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+#counter {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.botonescontador{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#increment {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 45%;
+    border-radius: 10px !important;
+    margin-bottom: 3% !important;
+}
+
+#reset {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 45%;
+    border-radius: 10px !important;
+    margin-bottom: 3% !important;
+}
+
+
+
+
+
+#calculadora{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;  
+    border-radius: 10px;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#divCal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.calcutable {
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+  
+.input[type="text"] {
+    text-align: right;
+    font-size: 30px;
+    width: 100%;
+    border-radius: 10px !important;
+    color: #333333;
+    padding: 6px;
+    box-sizing: border-box;
+}
+  
+.buttoncal {
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+  
+button:hover {
+    background-color: #b8b8b8;
+}
+  
+button:active {
+    background-color: #a0a0a0;
+}
+  
+#btn_rstcal {
+    width: 90% !important;
+    margin-bottom: 3%;
+}
+
+.igual{
+    background-color: whitesmoke;
+    color: rgba(25,135,84,255);
+    border-color: rgba(25,135,84,255);
+    border: solid 0.5px;
+}
+
+.igual:hover{
+    background-color: rgba(25,135,84,255);
+    color: white;
+}
+
+tr[draggable="true"] {
+    cursor: move;
+}
+
+.Data{
+    background-color: whitesmoke;
+    margin-top: 6%;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rhfbtn{
+    padding: 15px;
+    border-radius: 9px;
+    font-size: x-large;
+}
+
+nav1{
+    display: flex;
+    justify-content: center;
+}
